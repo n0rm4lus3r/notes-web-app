@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "agave";
+  src: url("agave.ttf");
+}
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+  width: 0;
+}
+:root {
+  --text: #55f9ff;
+  --background-1: #101019;
+  --background-2: #000;
+  --alpha: #fff3;
+}
+::selection {
+  background: #1a1a2e;
+  color: #ff00ff;
+}
+body {
+  background: var(--background-1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#note {
+  height: 98.5vh;
+  width: 100%;
+  background: var(--background-2);
+  color: var(--text);
+  resize: horizontal;
+  text-align: justify;
+  overflow: auto;
+  border: none;
+  padding: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  margin: 0.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.06rem;
+  font-family: "agave";
+}
+#cmd {
+  width: 100%;
+  height: 1.5rem;
+  background: var(--background-2);
+  color: var(--text);
+  outline: none;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+  font-family: "agave";
+}
