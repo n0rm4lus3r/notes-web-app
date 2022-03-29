@@ -4,17 +4,39 @@
         <title>--note</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-        <link rel="icon" href="icon.png" type="icon/png">
+        <link rel="icon" href="note.png" type="icon/png">
         <link rel="stylesheet" href="note.css">
     </head>
-    <body>
-        <textarea
-            id="note"
-            autocomplete="off"
-            autofocus="off"
-            spellcheck="false"
-        ></textarea>
-        <input type="text" id="cmd">
+    <body class="main-mixin">
+        <section class="main-mixin">
+            <textarea
+                class="note note-main main-mixin"
+                autocomplete="off"
+                autofocus
+                spellcheck="false"
+                placeholder="soshite"
+            ></textarea>
+            <textarea
+                class="note note-top main-mixin"
+                autocomplete="off"
+                autofocus="off"
+                spellcheck="false"
+                placeholder="soshite"
+            ></textarea>
+            <textarea
+                class="note note-sub main-mixin"
+                autocomplete="off"
+                autofocus="off"
+                spellcheck="false"
+                placeholder="soshite"
+            ></textarea>
+        </section>
+        <input type="text" id="cmd" class="main-mixin" placeholder="soshite">
+        <div id="t">
+            <header></header>
+            <nav class="q"></nav>
+            <nav class="a"></nav>
+        </div>
     </body>
 </html>
 <script src="note.js"></script>
